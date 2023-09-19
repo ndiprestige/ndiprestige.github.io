@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prestige</title>
+    <!--<link rel="icon" href="{{url_for('static', filename='images/P_icon_color_multi.ico')}}">-->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Lato:400,700|Open+Sans:400,600,700|Roboto:400,500,700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/b76eec08f4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main-panel">
+        	 <!--Navigation-->
+	        <nav class="main-nav container">
+	            <div class="param">
+	                <a href="#"><i class="fa-regular fa-sun fa-xl"></i></a>
+	                <span class="separator">|</span>
+	                <a href="#"><i class="fa-solid fa-rss fa-xl"></i></a>
+	            </div> 
+	            <ul class="nav-menu">
+	                <li><a href="https://www.instagram.com/niprestige/"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+	                <li><a href="https://www.linkedin.com/in/alainerosprestige/"><i class="fa-brands fa-linkedin-in fa-xl"></i></a></li>
+	                <li><a href="https://twitter.com/prestalain"><i class="fa-brands fa-square-x-twitter fa-xl"></i></a></li>
+	            </ul>
+	            <div class="nav-button"></div>
+	        </nav>
+			<div class="profile-panel container">
+	            <div class="panel">
+	                <div class="profile-img">
+	                    <a href="#"><img class="img-circle" src="{{url_for('static', filename='images/Alain.jpg')}}" alt=""></a>
+	                </div>
+	                <div class="main-info">
+	                    <h4 class="profile-name">Alain Eros Prestige M.</h4>
+	                    <!--<p class="profile-info"><span>Student</span> <a href="https://www.uclouvain.be">@UCLouvian</a></p>-->
+	                </div>
+	                <div class="secondary-info">
+	                    <p>
+	                    This is my personal website, it may also be considered as my portfolio. 
+	                    On this site you will find some of my projects, programming languages I am familiar with,
+	                    my educational background, CV and other content in form of blog. <br /> 
+	                    </p>
+	                </div>
+	                <div class="languages-info">
+       	                <h4 class="section-title">#Programming languages.</h4>
+						<div class="cards-wrapper">
+							<div class="p-card">
+	   	                    	<img class="p-card-img" src="{{url_for('static', filename='images/py.webp')}}"/>
+	   	                    	<p class="p-card-lvl">95%</p>
+	   	                    </div>
+	   	                    <div class="p-card">
+   	   	                    	<img class="p-card-img" src="{{url_for('static', filename='images/c.png')}}"/>
+   	   	                    	<p class="p-card-lvl">95%</p>
+   	   	                    </div>
+   	   	                    <div class="p-card">
+  	   	                    	<img class="p-card-img" src="{{url_for('static', filename='images/csharp.webp')}}"/>
+  	   	                    	<p class="p-card-lvl">85%</p>
+  	   	                    </div>
+  	   	                    <div class="p-card">
+   	   	                    	<img class="p-card-img" src="{{url_for('static', filename='images/js.png')}}"/>
+   	   	                    	<p class="p-card-lvl">80%</p>
+   	   	                    </div>
+   	   	                    <div class="p-card">
+   	   	                    	<img class="p-card-img" src="{{url_for('static', filename='images/bash.png')}}"/>
+   	   	                    	<p class="p-card-lvl">80%</p>
+   	   	                    </div>
+						</div>
+   	                </div>
+	            </div>
+	        </div>
+	        <nav class="bottom-nav container">
+				<ul class="nav">
+					<li><a href="https://github.com/niprestige">Projects</a></li>
+					<li class="active"><a href="#">Languages</a></li>
+					<li><a href="https://uclouvain.be/en/faculties/epl">Education</a></li>
+					<li><a href="{{url_for('static', filename='documents/cv.pdf')}}" download>CV</a></li>
+				</ul>
+	        </nav>
+     	</div>
+     	
+    	<div class="blog-panel">
+    		<div class="container">
+    			<h4 class="blog-header">Blog content</h4>
+    			<div class="blog-panel-content">
+					<img src="{{url_for('static', filename='images/nodata.svg')}}" />
+    			</div>
+    			<h1 class="nodata">No data yet!</h4>
+    		</div>
+			
+        </div>  
+    </div>
+    <script src="https://kit.fontawesome.com/1e63f1c54a.js"></script>
+</body>
+</html>
