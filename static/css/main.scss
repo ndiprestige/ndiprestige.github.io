@@ -108,7 +108,7 @@ div.wrapper{
 	        div.profile-img{
 	            img{
 	                width: 10vh;
-	                border: 4px solid #3D3D3D;
+	                border: 6px solid #616161;
 	                border-radius: 50%;
 	            }
 	        }
@@ -116,7 +116,7 @@ div.wrapper{
 	        div.main-info{
 	            h4.profile-name{
 	            	margin:0;
-	                font-family: $inter;
+	                font-family: 'Epilogue', sans-serif;
 	                font-weight: bold;
 	                color: #3D3D3D;
 	                font-size: 1.5rem;
@@ -131,6 +131,7 @@ div.wrapper{
 	            }
 	        }
 	        div.languages-info{
+	        	margin-top:8vh;
 	        	div.cards-wrapper{
 	        		display:flex;
 	        		flex-direction: row;
@@ -139,7 +140,7 @@ div.wrapper{
 	        		div.p-card{
 	        			padding:2%;
 	        			img.p-card-img {
-	        			    width: 100px;
+	        			    width: 4rem;
 	        			}
 	        			p.p-card-lvl{
 	        				font-family:$inter;
@@ -150,15 +151,17 @@ div.wrapper{
 	        }
 	       
 	        .section-title{
-   	        	font-family: $inter;
+   	        	font-family: 'Epilogue', sans-serif;
                 font-weight: bold;
                 color: #3D3D3D;
                 font-size: 1.5rem;
+                margin-bottom: 8px;
    	        }
 	     
 	    }
 	    nav.bottom-nav{
 	    	margin: 0 10%;
+	    	bottom: 0;
 	    	ul.nav{
 	    		    display: flex;
 				    flex-direction: row;
@@ -194,8 +197,17 @@ div.wrapper{
 	    justify-content: space-between;
 
 	    h4.blog-header{
+	    	font-family: 'Epilogue', sans-serif;
 	    	margin:0;
 	    	color: #3D3D3D;
+	    }
+	    .blog-panel-content{
+	    	display:flex;
+	    	flex-flow:column nowrap;
+	    	align-items:center;
+	    	.blog-no-content-img{
+	    		width:20vw;
+	    	}
 	    }
 	    h1.nodata{
 	    	color: #3D3D3D;
@@ -210,6 +222,14 @@ div.container{
 .active{
 	background-color:white;
 }
+
+.hide_blog{
+	width: 0;
+    height: 0;
+    background-color: #C7D2CF;
+    display: none;
+}
+
 @media only screen and (max-width:767px){
     div.divider{
         hr.small{
