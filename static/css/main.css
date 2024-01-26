@@ -2,6 +2,10 @@
 /*
 $primary-color:#1D0C59;
 */
+a:hover {
+  cursor: pointer;
+}
+
 body {
   position: relative;
   margin: 0 auto;
@@ -120,20 +124,29 @@ div.wrapper div.main-panel div.panel div.languages-info {
 div.wrapper div.main-panel div.panel div.languages-info div.cards-wrapper {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+div.wrapper div.main-panel div.panel div.languages-info div.cards-wrapper div.cards {
+  display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
-div.wrapper div.main-panel div.panel div.languages-info div.cards-wrapper div.p-card {
-  padding: 2%;
+div.wrapper div.main-panel div.panel div.languages-info div.cards-wrapper div.cards div.p-card {
+  padding: 4%;
 }
-div.wrapper div.main-panel div.panel div.languages-info div.cards-wrapper div.p-card img.p-card-img {
+div.wrapper div.main-panel div.panel div.languages-info div.cards-wrapper div.cards div.p-card img.p-card-img {
   width: 4rem;
 }
-div.wrapper div.main-panel div.panel div.languages-info div.cards-wrapper div.p-card p.p-card-lvl {
+div.wrapper div.main-panel div.panel div.languages-info div.cards-wrapper div.cards div.p-card img.edu {
+  width: 6rem;
+}
+div.wrapper div.main-panel div.panel div.languages-info div.cards-wrapper div.cards div.p-card p.p-card-lvl {
   font-family: "Inter", Sans-serif;
   font-weight: bold;
 }
-div.wrapper div.main-panel div.panel .section-title {
+div.wrapper div.main-panel div.panel #info-title {
   font-family: "Epilogue", sans-serif;
   font-weight: bold;
   color: #3D3D3D;
@@ -243,6 +256,16 @@ div.container {
     text-decoration: none;
     padding: 20px 10px;
   }
+}
+#prev, #next {
+  cursor: pointer;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
 /*# sourceMappingURL=main.css.map */

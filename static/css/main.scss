@@ -13,6 +13,10 @@ $cabin:'Cabin', sans-serif;
 $inter:'Inter', Sans-serif;
 $primary-font:$cabin;
 $secondary-font:$open-sans;
+
+a:hover{
+	cursor: pointer;
+}
 body{
     position: relative;
     margin: 0 auto;
@@ -134,23 +138,33 @@ div.wrapper{
 	        	margin-top:8vh;
 	        	div.cards-wrapper{
 	        		display:flex;
-	        		flex-direction: row;
-	        		justify-content:space-around;
-	        		align-items:center;
-	        		div.p-card{
-	        			padding:2%;
-	        			img.p-card-img {
-	        			    width: 4rem;
-	        			}
-	        			p.p-card-lvl{
-	        				font-family:$inter;
-	        				font-weight:bold;
-	        			}
+		        	flex-direction: row;
+		        	justify-content:space-between;
+		        	align-items:center;
+	        		div.cards{
+	        			display:flex;
+		        		flex-direction: row;
+		        		justify-content:space-around;
+		        		align-items:center;
+		        		div.p-card{
+		        			padding:4%;
+		        			img.p-card-img {
+		        			    width: 4rem;
+		        			}
+		        			img.edu{
+		        				width:6rem;
+		        			}
+		        			p.p-card-lvl{
+		        				font-family:$inter;
+		        				font-weight:bold;
+		        			}
+		        		}
 	        		}
+	        		
 	        	}
 	        }
 	       
-	        .section-title{
+	        #info-title{
    	        	font-family: 'Epilogue', sans-serif;
                 font-weight: bold;
                 color: #3D3D3D;
@@ -266,4 +280,15 @@ div.container{
 		padding: 20px 10px
 	}
 
+}
+
+#prev, #next {
+  	cursor: pointer;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
